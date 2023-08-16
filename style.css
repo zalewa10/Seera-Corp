@@ -1,0 +1,54 @@
+:root {
+    --orange: #F06111;
+  }
+
+nav{
+    padding:20px 40px;
+}
+
+.hero,.our-prod{
+    padding: 30px 40px;
+}
+
+.whitebg {
+    border-top: 3px solid var(--orange);
+    border-right: 3px solid var(--orange);
+}
+
+
+.orange {
+    color: var(--orange);
+}
+
+
+.hero-header{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.hero-text{
+    font-size:  .8rem;
+}
+
+.header{
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sub-header{
+    font-size: 0.8em;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sub{
+    color: black;
+    font-size: 0.8em;
+    margin: 5px 0;
+    font-weight: 600;
+    text-align: center;
+}
