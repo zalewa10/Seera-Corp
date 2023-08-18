@@ -196,4 +196,9 @@ footer {
     justify-content: space-evenly;
     align-items: flex-start;
   }
+
+  form {
+    margin: auto;
+    max-width: 900px;
+  }
 }
