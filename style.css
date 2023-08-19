@@ -53,18 +53,15 @@ footer,
 }
 
 .sub-header {
-  font-size: 0.8em;
   padding: 10px;
   margin-bottom: 30px;
-  font-weight: 400;
+
   text-align: center;
 }
 
 .sub {
   color: black;
-  font-size: 0.8em;
   margin: 5px 0;
-  font-weight: 600;
   text-align: center;
 }
 
@@ -160,7 +157,14 @@ footer {
 .contact {
   position: relative;
 }
-
+a:hover p {
+  color: #f06111;
+  transition: 0.2s;
+}
+a:hover {
+  color: #f06111;
+  transition: 0.2s;
+}
 @media only screen and (min-width: 768px) {
   .flex1 {
     flex-direction: row;
