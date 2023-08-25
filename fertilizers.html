@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Fertilizers | Seera-Corp |</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="index.html" class="flex items-center">
+          <span class="self-center text-xl font-bold whitespace-nowrap"
+            >SEERA-CORP</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            class="text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bgorange"
+          >
+            <a href="contact.html">Contact</a>
+          </button>
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="fertilizers.html"
+                class="block py-2 pl-3 pr-4 text-white bg-gray-200 rounded md:bg-transparent md:text-yellow-500 md:p-0 orange"
+                aria-current="page"
+                >Fertilizers</a
+              >
+            </li>
+            <li>
+              <a
+                href="sugar.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0"
+                >Sugar</a
+              >
+            </li>
+            <li>
+              <a
+                href="oils.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0"
+                >Vegetable oils</a
+              >
+            </li>
+            <li>
+              <a
+                href="salt.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0"
+                >Salt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <img src="img/vector1.png" alt="" />
+
+    <div class="fert">
+      <p class="header3">Fertilizers</p>
+      <div class="w-full bg-white rounded-lg shadow">
+        <ul
+          class="flex flex-wrap text-s font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50"
+          id="defaultTab"
+          data-tabs-toggle="#defaultTabContent"
+          role="tablist"
+        >
+          <li class="mr-2">
+            <button
+              id="about-tab"
+              data-tabs-target="#about"
+              type="button"
+              role="tab"
+              aria-controls="about"
+              aria-selected="true"
+              class="inline-block p-4 rounded-tl-lg hover:bg-gray-100"
+            >
+              1.Potasowe
+            </button>
+          </li>
+          <li class="mr-2">
+            <button
+              id="services-tab"
+              data-tabs-target="#services"
+              type="button"
+              role="tab"
+              aria-controls="services"
+              aria-selected="false"
+              class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100"
+            >
+              2.Fosforowe
+            </button>
+          </li>
+          <li class="mr-2">
+            <button
+              id="statistics-tab"
+              data-tabs-target="#statistics"
+              type="button"
+              role="tab"
+              aria-controls="statistics"
+              aria-selected="false"
+              class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100"
+            >
+              3.Azotowe
+            </button>
+          </li>
+          <li class="mr-2">
+            <button
+              id="multi-tab"
+              data-tabs-target="#multi"
+              type="button"
+              role="tab"
+              aria-controls="multi"
+              aria-selected="false"
+              class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100"
+            >
+              4.Wieloskładnikowe
+            </button>
+          </li>
+        </ul>
+        <div id="defaultTabContent">
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="about"
+            role="tabpanel"
+            aria-labelledby="about-tab"
+          >
+            <h2
+              class="mb-3 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            >
+              Nawozy potasowe - należą do grupy nawozów mineralnych, gdzie
+              wiodącym składnikiem jest potas K+.
+            </h2>
+            <p class="mb-3 text-m text-gray-500 dark:text-gray-400">
+              Nawozy te poprawia gospodarkę wodną roślin i ułatwia ich
+              przystosowanie się do suszy. Dzięki wchłanianiu się potasu w
+              tkanki, rośliny stają się mocniejsze i mniej podatne na działanie
+              szkodników i grzybowych patogenów. Przez to rośliny lepiej
+              absorbują dwutlenek węgla i efektywniej wykorzystują światło, są
+              także bardziej odporne na mróz. Nawozy potasowe dzielimy na :
+              Chlorkowe – stosowane dla roślin niewrażliwych na nadmiar chloru,
+              gdzie potas występuje w postaci chlorku potasu (KCl), siarczanowe
+              – potas występuje w postaci siarczanu potasu. Można je stosować
+              dla wszystkich roślin.
+            </p>
+          </div>
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="services"
+            role="tabpanel"
+            aria-labelledby="services-tab"
+          >
+            <h2
+              class="mb-3 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            >
+              Nawozy fosforowe to nawozy mineralne, których głównym składnikiem
+              odżywczym jest fosfor.
+            </h2>
+            <p class="mb-3 text-m text-gray-500 dark:text-gray-400">
+              Jest to makroelement w odżywianiu roślin. Nawozy te w niewielkim
+              stopniu zwiększają wielkość plonu, ale znacząco poprawiają jego
+              jakość. Odpowiadają za kolor i wielkość kwiatów. Stosując nawóz
+              fosforowy, owoce są bardziej kształtne i lepiej wybarwione. Nawóz
+              ma także wpływ na proces ukorzeniania się rośliny, a dodatkowo
+              wpływa na efektywność nawożenia nawozami azotowymi. Fosfor pełni
+              bardzo dużą rolę w procesie rozwoju rośliny. Jest to składnik
+              budulcowy liści, kwiatów i owoców. Nie jest dostępny w formie
+              naturalnej, dlatego stosuje się wyłącznie nawóz sztuczny. Na
+              glebach żyznych i urodzajnych o dobrej strukturze nie potrzeba go
+              wiele, jednak w przypadku gleb ciężkich, gliniastych i mokrych
+              nawożenie jest bardzo ważne. Związki fosforu występujące w takich
+              glebach nie są przyswajalne przez rośliny. Ze względu na szybkość
+              działania nawozy fosforowe dzieli się na: Szybko działające,
+              rozpuszczalne w wodzie, wolno działające, rozpuszczalne w słabych
+              kwasach, bardzo wolno działające, rozpuszczalne w mocnych kwasach.
+            </p>
+          </div>
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="statistics"
+            role="tabpanel"
+            aria-labelledby="statistics"
+          >
+            <h2
+              class="mb-3 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            >
+              Nawozy azotowe- naleza do grupy bazujacej na łatwo przyswajalnych
+              związkach azotowych.
+            </h2>
+            <p class="mb-3 text-m text-gray-500 dark:text-gray-400">
+              Tutaj rozrózniamy 3 podgrupy: szybko działającej – azotanowej
+              wolniej działajacej – amonowej dlugo dzialajacej-amidowej np
+              mocznik N46 w naszej ofercie Azot ma największe znaczenie w
+              rozwoju roślin. Odpowiada za wzrost masy zielonej i powiększenie
+              plonu nasion. W przypadku niedoboru azotu, rośliny słabo się
+              krzewią oraz mają słabe i szybko opadające liście. Dodatkowo
+              obniża się jakość plonu, występuje skrócenie i osłabienie łodyg
+              oraz okres wegetacji ulega skróceniu. Ze względu na formę azotu,
+              nawozy azotowe dzieli się na: Nawozy amonowe – zbudowane na bazie
+              siarczanu amonu. Mają silne działanie zakwaszające, stosowane na
+              glebach zasadowych lub neutralnych. Bardzo dobrze rozpuszczają się
+              w wodzie, dlatego stosuje się je dolistnie. Nawozy saletrzane –
+              stosowane do nawożenia pogłównego. Saletra występuje w różnych
+              rodzajach, a kryterium podziału jest skład, ponieważ może być
+              łączona z różnymi składnikami mineralnymi. Nawozy
+              saletrzano-amonowe – łatwe do stosowania i szybko rozpuszczalne w
+              wodzie. Stosuje się je do wzmacniania gleby przed siewem lub
+              sadzeniem. Saletrzak ma lekko kwaśny odczyn, dlatego może wpływać
+              na poziom pH podłoża. Nawozy amidowe.
+            </p>
+          </div>
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="multi"
+            role="tabpanel"
+            aria-labelledby="multi-tab"
+          >
+            <h2
+              class="mb-3 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            >
+              Nawozy wieloskładnikowe to nawozy mineralne, które zawierają dwa
+              lub więcej pierwszoplanowych składników pokarmowych (azot, fosfor,
+              potas) roślin.
+            </h2>
+            <p class="mb-3 text-m text-gray-500 dark:text-gray-400">
+              Stosunek N:P:K w aplikowanym nawozie należy dostosować do potrzeb,
+              ustalając odpowiednie proporcje między poszczególnymi składnikami.
+              Wyróżnia się nawozy wieloskładnikowe mieszane, czyli takie, które
+              otrzymuje się przez mechaniczne mieszanie składników (np.
+              superfosfatu z siarczanem amonu) oraz takie, które otrzymuje się w
+              reakcjach chemicznych (np. fosforany amonowe). Zazwyczaj fosforany
+              amonowe miesza się z solami potasowymi. Otrzymuje się wtedy z
+              nawozu dwuskładnikowego (NP) nawóz trójskładnikowy (NPK).
+              Stosowanie nawozów wieloskładnikowych zmniejsza pracochłonność,
+              ponieważ zmniejsza liczbę zabiegów nawożenia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div
+        class="flex flex-col items-center bg-white rounded-lg shadow md:flex-row md:max-w-xxl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 info-card"
+      >
+        <img
+          class="object-cover w-full rounded-t-lg h-30 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="img/image 7.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Krótki opis o nawozach
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas
+            tempore aut nisi fugiat id, suscipit officia saepe odit, obcaecati
+            soluta est voluptas architecto cupiditate molestias quaerat odio
+            ullam ex.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center bg-white rounded-lg shadow md:flex-row md:max-w-xxl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 info-card"
+      >
+        <img
+          class="object-cover w-full rounded-t-lg h-30 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="img/pro4.jpg"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Mapa skąd brane są nawozy
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+            dolore maxime quasi sint temporibus error odio animi, beatae eos
+            accusamus odit dignissimos velit excepturi ex amet ea nam atque. Ab.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="img/vector2.png" alt="" />
+
+    <footer class="bg-white dark:bg-gray-900 ft2">
+      <div class="mx-auto w-full max-w-screen-xl py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="index.html" class="flex items-center">
+              <div class="flex2">
+                <span class="text-xl font-bold whitespace-nowrap"
+                  >SEERA-CORP</span
+                >
+                <span class="text-sm font-medium whitespace-nowrap"
+                  >WJPT-SEERA S.R.L</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="grid2 grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Pages
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-small">
+                <li class="mb-4">
+                  <a href="index.html" class="hover:underline">Home</a>
+                </li>
+                <li class="mb-4">
+                  <a href="fertilizers.html" class="hover:underline"
+                    >Fertilizers</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="oils.html" class="hover:underline">Vegetable oils</a>
+                </li>
+                <li class="mb-4">
+                  <a href="salt.html" class="hover:underline">Salt</a>
+                </li>
+                <li class="mb-4">
+                  <a href="contact.html" class="hover:underline">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Contact
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-small">
+                <li class="mb-4">
+                  <p>Work hours: 8:00-16:00</p>
+                </li>
+                <li class="mb-4">
+                  <p>Phone: +40 770 381 982</p>
+                </li>
+                <li class="mb-4">
+                  <p>Whatsapp: +40 770 385 207</p>
+                </li>
+                <li class="mb-4">
+                  <p>
+                    E-mail:
+                    <a href="mailto:sales@seera-corp.eu">sales@seera-corp.eu</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Address
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-small">
+                <li class="mb-4">
+                  <p>
+                    300078 Timișoara Str. Vasile Alecsandri Nr.3, Etaj 2, Ap.8
+                    ROMANIA
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2023 <a href="index.html" class="hover:underline">Seera-Corp</a>.
+            All Rights Reserved.
+          </span>
+          <span class="text-sm text-gray-500 sm:text-center">
+            <a href="https://kzalewski.com/" class="hover:underline"
+              >KZALEWSKI</a
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+  </body>
+</html>
