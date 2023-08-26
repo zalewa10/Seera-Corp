@@ -248,4 +248,12 @@ a:hover {
   .fert {
     padding: 0px 40px 0 40px;
   }
+
+  .flex30 {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex30 img {
+    width: 30%;
+  }
 }
