@@ -198,7 +198,12 @@ nav {
   gap: 30px;
   padding: 0 40px;
 }
-
+.gap2 {
+  margin-top: 20px;
+}
+.gap {
+  margin-bottom: 20px;
+}
 @media only screen and (min-width: 768px) {
   .header2 {
     padding-top: 100px;
@@ -271,6 +276,7 @@ nav {
   .flex30 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .flex30 img {
     width: 30%;
@@ -278,5 +284,20 @@ nav {
 
   .szer {
     width: 100%;
+  }
+  .flex40 {
+    display: flex;
+    gap: 30px;
+  }
+  .szer40 {
+    width: 40%;
+  }
+  .szer60 {
+    width: 60%;
+    display: flex;
+    align-items: stretch;
+  }
+  .gap2 {
+    margin-top: 0;
   }
 }
