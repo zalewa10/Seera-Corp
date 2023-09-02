@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Sugar | Seera-Corp |</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="index.html" class="flex items-center">
+          <span class="self-center text-xl font-bold whitespace-nowrap"
+            >SEERA-CORP</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <a href="contact.html"
+            ><button
+              type="button"
+              class="text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bgorange"
+            >
+              Contact
+            </button></a
+          >
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="fertilizers.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0"
+                >Fertilizers</a
+              >
+            </li>
+            <li>
+              <a
+                href="sugar.html"
+                class="block py-2 pl-3 pr-4 text-white bg-gray-200 rounded md:bg-transparent md:text-yellow-500 md:p-0 orange"
+                aria-current="page"
+                >Sugar</a
+              >
+            </li>
+            <li>
+              <a
+                href="oils.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0"
+                >Vegetable oils</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero2">
+      <div class="flex60">
+        <div class="left">
+          <p class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+            Sugar - for the food industry and beyond
+          </p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            We supply various types of sugar from European and American
+            producers, with different colors and other parameters, but always of
+            the highest quality. White, brown, beetroot and cane.
+          </p>
+        </div>
+        <div class="right">
+          <img src="img/sugar-hero.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="fert">
+      <div
+        class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+      >
+        <div class="sm:hidden">
+          <label for="tabs" class="sr-only">Select tab</label>
+          <select
+            id="tabs"
+            class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          >
+            <option>Sugarcane</option>
+            <option>Sugar beet</option>
+          </select>
+        </div>
+        <ul
+          class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400"
+          id="fullWidthTab"
+          data-tabs-toggle="#fullWidthTabContent"
+          role="tablist"
+        >
+          <li class="w-full">
+            <button
+              id="stats-tab"
+              data-tabs-target="#stats"
+              type="button"
+              role="tab"
+              aria-controls="stats"
+              aria-selected="true"
+              class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+            >
+              Sugarcane
+            </button>
+          </li>
+          <li class="w-full">
+            <button
+              id="about-tab"
+              data-tabs-target="#about"
+              type="button"
+              role="tab"
+              aria-controls="about"
+              aria-selected="false"
+              class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+            >
+              Sugar beet
+            </button>
+          </li>
+        </ul>
+        <div
+          id="fullWidthTabContent"
+          class="border-t border-gray-200 dark:border-gray-600"
+        >
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="stats"
+            role="tabpanel"
+            aria-labelledby="stats-tab"
+          >
+            <p>
+              Sugar, which we have directly from sugar cane producers, is a
+              natural source of energy and plays a vital role in the food,
+              pharmaceutical and beverage industries. <br />
+              South America is one of the largest producers of sugar in the
+              world. They produce food that feeds and sweetens the lives of
+              hundreds of millions of people around the world. <br />Bulk raw
+              crystal sugar Raw sugar undergoes a refining process, during which
+              the crystals are coated with a fine layer of molasses to produce a
+              brownish colour. . The type produced is very high polarity.
+              <br />Bagged white crystal sugar This sugar comes from a different
+              processing step, resulting in crystals ready for direct
+              consumption. It is used in the production of beverages, cakes and
+              confectionery all over the world. <br />It is sold in 50-kg bags
+              in Brazil and abroad, and especially in 1200-kg big-bags for
+              industrial customers. <br />The quality of our product Our sugar
+              meets the highest quality standards and criteria and
+              certifications <br />The sugar we offer is also certified in
+              accordance with the FSSC 22000 standard, which defines standards
+              for food-safe production.
+            </p>
+          </div>
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="about"
+            role="tabpanel"
+            aria-labelledby="about-tab"
+          >
+            <p>Tu będzie tekst o cukrze z buraka</p>
+          </div>
+        </div>
+      </div>
+      <p>Tutaj będzie tekst o ICUMSA</p>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#D9D9D9"
+        fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,250.7C672,245,768,235,864,245.3C960,256,1056,288,1152,282.7C1248,277,1344,235,1392,213.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+    <footer class="bg-white dark:bg-gray-900 ft2">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="index.html" class="flex items-center">
+              <div class="flex2">
+                <span class="text-xl font-bold whitespace-nowrap"
+                  >SEERA-CORP</span
+                >
+                <span class="text-sm font-medium whitespace-nowrap"
+                  >WJPT-SEERA S.R.L</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="grid2 grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Pages
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-small">
+                <li class="mb-4">
+                  <a href="index.html" class="hover:underline">Home</a>
+                </li>
+                <li class="mb-4">
+                  <a href="fertilizers.html" class="hover:underline"
+                    >Fertilizers</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="oils.html" class="hover:underline">Vegetable oils</a>
+                </li>
+                <li class="mb-4">
+                  <a href="salt.html" class="hover:underline">Salt</a>
+                </li>
+                <li class="mb-4">
+                  <a href="contact.html" class="hover:underline">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Contact
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-small">
+                <li class="mb-4">
+                  <p>Work hours: 8:00-16:00</p>
+                </li>
+                <li class="mb-4">
+                  <p>Phone: +40 770 381 982</p>
+                </li>
+                <li class="mb-4">
+                  <p>Whatsapp: +40 770 385 207</p>
+                </li>
+                <li class="mb-4">
+                  <p>
+                    E-mail:
+                    <a href="mailto:sales@seera-corp.eu">sales@seera-corp.eu</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Address
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-small">
+                <li class="mb-4">
+                  <p>
+                    300078 Timișoara Str. Vasile Alecsandri Nr.3, Etaj 2, Ap.8
+                    ROMANIA
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2023 <a href="index.html" class="hover:underline">Seera-Corp</a>.
+            All Rights Reserved.
+          </span>
+          <span class="text-sm text-gray-500 sm:text-center">
+            <a href="https://kzalewski.com/" class="hover:underline"
+              >KZALEWSKI</a
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+  </body>
+</html>
