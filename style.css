@@ -204,6 +204,20 @@ nav {
 .gap {
   margin-bottom: 20px;
 }
+.flex-con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact-text img {
+  max-width: 30px;
+  margin-right: 10px;
+}
+
+.flex3 {
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (min-width: 768px) {
   .header2 {
     padding-top: 100px;
@@ -241,6 +255,7 @@ nav {
     text-align: left;
     font-size: 1.1em;
   }
+
   .contact-title {
     font-size: 1.5em;
     text-align: left;
