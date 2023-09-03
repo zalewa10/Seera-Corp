@@ -25,23 +25,19 @@
           >
         </a>
         <div class="flex md:order-2 gap-6">
-          <a href="contact.html"
-            ><button
-              type="button"
-              class="text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bgorange"
+          <div class="flex3">
+            <a href="contact.html"
+              ><button
+                type="button"
+                class="text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bgorange znik"
+              >
+                Contact
+              </button></a
             >
-              Contact
-            </button></a
-          >
-          <a href="#" id="translateButton">
-            <button
-              type="button"
-              class="text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bgorange"
-            >
-              Romanian
-            </button>
-          </a>
-
+            <a href="#" id="translateButton">
+              <img src="img/ro.svg" class="small" alt="" />
+            </a>
+          </div>
           <button
             data-collapse-toggle="navbar-cta"
             type="button"
@@ -102,6 +98,14 @@
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0"
                 >Vegetable oils</a
               >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0 znik2"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -543,33 +547,44 @@
         </div>
       </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
     <!-- Include the Google Translate API scripts -->
     <script type="text/javascript">
+      let translationEnabled = false;
+      let googleTranslateElement = null;
+
       function googleTranslateElementInit() {
         // No need to create the TranslateElement here.
-        // We'll trigger the translation programmatically.
+        // We'll create it when needed.
       }
 
-      // Function to programmatically trigger the translation
-      function translateToRomanian() {
-        const googleTranslateElement = new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            includedLanguages: "ro",
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          "google_translate_element"
-        );
+      // Function to toggle translation on and off
+      function toggleTranslation() {
+        if (translationEnabled) {
+          // If translation is enabled, disable it
+          if (googleTranslateElement) {
+            googleTranslateElement.showBanner(true);
+            googleTranslateElement = null;
+          }
+        } else {
+          // If translation is disabled, enable it
+          googleTranslateElement = new google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              includedLanguages: "ro",
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+          googleTranslateElement.showBanner(false);
+        }
 
-        // Hide the Google Translate button
-        googleTranslateElement.showBanner(false);
+        translationEnabled = !translationEnabled;
       }
 
-      // Attach an event listener to the button to trigger the translation
+      // Attach an event listener to the button to toggle translation
       const translateButton = document.getElementById("translateButton");
-      translateButton.addEventListener("click", translateToRomanian);
+      translateButton.addEventListener("click", toggleTranslation);
     </script>
 
     <script
