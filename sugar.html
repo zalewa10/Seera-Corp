@@ -131,137 +131,331 @@
     </div>
 
     <div class="fert">
-      <div
-        class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 gap"
-      >
-        <div class="sm:hidden">
-          <label for="tabs" class="sr-only">Select tab</label>
-          <select
-            id="tabs"
-            class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          >
-            <option>Sugarcane</option>
-            <option>Sugar beet</option>
-          </select>
-        </div>
+      <div class="w-full bg-white rounded-lg shadow gap">
         <ul
-          class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400"
-          id="fullWidthTab"
-          data-tabs-toggle="#fullWidthTabContent"
+          class="flex flex-wrap text-lg font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 flex8"
+          id="defaultTab"
+          data-tabs-toggle="#defaultTabContent"
           role="tablist"
         >
-          <li class="w-full">
-            <button
-              id="stats-tab"
-              data-tabs-target="#stats"
-              type="button"
-              role="tab"
-              aria-controls="stats"
-              aria-selected="true"
-              class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
-            >
-              Sugarcane
-            </button>
-          </li>
-          <li class="w-full">
-            <button
-              id="about-tab"
-              data-tabs-target="#about"
-              type="button"
-              role="tab"
-              aria-controls="about"
-              aria-selected="false"
-              class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
-            >
-              Sugar beet
-            </button>
-          </li>
-        </ul>
-        <div
-          id="fullWidthTabContent"
-          class="border-t border-gray-200 dark:border-gray-600"
-        >
-          <div
-            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
-            id="stats"
-            role="tabpanel"
-            aria-labelledby="stats-tab"
-          >
-            <p>
-              Sugar, which we have directly from sugar cane producers, is a
-              natural source of energy and plays a vital role in the food,
-              pharmaceutical and beverage industries. <br />
-              South America is one of the largest producers of sugar in the
-              world. They produce food that feeds and sweetens the lives of
-              hundreds of millions of people around the world. <br />Bulk raw
-              crystal sugar Raw sugar undergoes a refining process, during which
-              the crystals are coated with a fine layer of molasses to produce a
-              brownish colour. . The type produced is very high polarity.
-              <br />Bagged white crystal sugar This sugar comes from a different
-              processing step, resulting in crystals ready for direct
-              consumption. It is used in the production of beverages, cakes and
-              confectionery all over the world. <br />It is sold in 50-kg bags
-              in Brazil and abroad, and especially in 1200-kg big-bags for
-              industrial customers. <br />The quality of our product Our sugar
-              meets the highest quality standards and criteria and
-              certifications <br />The sugar we offer is also certified in
-              accordance with the FSSC 22000 standard, which defines standards
-              for food-safe production.
-            </p>
+          <div class="flex9">
+            <li class="mr-2">
+              <button
+                id="about-tab"
+                data-tabs-target="#about"
+                type="button"
+                role="tab"
+                aria-controls="about"
+                aria-selected="true"
+                class="inline-block p-4 rounded-tl-lg hover:bg-gray-100 width1"
+              >
+                <!-- <img src="img/sug1.png" alt="" class="si" /> -->
+                SUGARCANE
+              </button>
+            </li>
+            <li class="mr-2">
+              <button
+                id="services-tab"
+                data-tabs-target="#services"
+                type="button"
+                role="tab"
+                aria-controls="services"
+                aria-selected="false"
+                class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 bor2"
+              >
+                <!-- <img src="img/sug2.png" alt="" class="si" /> -->
+                SUGAR BEET
+              </button>
+            </li>
           </div>
+        </ul>
+        <div id="defaultTabContent">
           <div
             class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
             id="about"
             role="tabpanel"
             aria-labelledby="about-tab"
           >
-            <p>
-              Beet sugar production? This is a multi-stage process that requires
-              special apparatus. The process begins with harvesting the sugar
-              beet, which is washed and cleaned of light and heavy impurities.
-              The beet is cut into smaller pieces and a so-called cuttings is
-              formed, which are introduced into a diffuser. There, the sugar is
-              leached by using water at an elevated temperature (75-85 °C).
-              <br />
-              The result is a slice and raw juice containing 15% sugar. The
-              juice undergoes further processes, including purification from
-              non-sugar compounds. Further stages involve crystallisation and
-              centrifugation, which ultimately produces crystallised table
-              sugar.
-              <br />
-              Properties of beet sugar Beet sugar, although produced from beets,
-              is white in colour. It is a free-flowing, crystalline substance,
-              available in grocery shops.
-              <br />
-              Its unique characteristic is its sweet taste. In addition, beet
-              sugar dissolves well in water, has no odour, and when added to
-              foods and beverages does not affect their flavour or colour. This
-              makes it great not only as a sweetener for coffee and tea, but
-              also for sweetening dishes, snacks and desserts in general.
-              <br />
-              Types of beet sugar <br />
-              Although beet sugar appears to be a relatively simple and
-              versatile substance, we can encounter it under various terms in
-              the food industry:
-              <br />
-              Sugar - this term is used to describe a chemical compound composed
-              of two monosaccharide molecules - glucose and fructose. Other
-              names include disaccharide and sucrose. <br />
-              White sugar - this is a crystalline sugar with a high degree of
-              purity. The best quality is 'white sugar 1' or 'white sugar 2'.
-              Higher numbers indicate a poorer quality product. White sugar is
-              also sometimes referred to as refined sugar. <br />
-              Inverted sugar - a combination of glucose and fructose in two
-              equal parts. <br />
-              Candied sugar (kandyz) - sugar obtained through special
-              crystallisation. It is characterised by large sugar crystals. Raw
-              sugar - this is sugar that has undergone a crystallisation process
-              and is characterised by a lower degree of purity. Such sugar is
-              then converted to white sugar.
-            </p>
+            <div class="features">
+              <div class="feature">
+                <p
+                  class="text-xl font-semibold tracking-tight text-gray-900 feat-head"
+                >
+                  About
+                </p>
+                <p
+                  class="mb-3 font-normal text-gray-700 dark:text-gray-400 feat-text"
+                >
+                  Sugar, which we have directly from sugar cane producers, is a
+                  natural source of energy and plays a vital role in the food,
+                  pharmaceutical and beverage industries.
+                  <br />
+                  South America is one of the largest producers of sugar in the
+                  world. They produce food that feeds and sweetens the lives of
+                  hundreds of millions of people around the world.
+                </p>
+              </div>
+              <div class="feature">
+                <p
+                  class="text-xl font-semibold tracking-tight text-gray-900 feat-head"
+                >
+                  The quality of our product
+                </p>
+                <p
+                  class="mb-3 font-normal text-gray-700 dark:text-gray-400 feat-text"
+                >
+                  Our sugar meets the highest quality standards and criteria and
+                  certifications
+
+                  <br />
+                  The sugar we offer is also certified in accordance with the
+                  FSSC 22000 standard, which defines standards for food-safe
+                  production.
+                </p>
+              </div>
+              <div class="feature">
+                <p
+                  class="text-xl font-semibold tracking-tight text-gray-900 feat-head"
+                >
+                  Types
+                </p>
+                <div class="feat-text">
+                  <ul
+                    role="list"
+                    class="mt-4 space-y-4 text-gray-500 dark:text-gray-400"
+                  >
+                    <li class="flex space-x-2 items-center">
+                      <svg
+                        class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                        />
+                      </svg>
+                      <span class="leading-tight"
+                        >Bulk raw crystal sugar - raw sugar undergoes a refining
+                        process, during which the crystals are coated with a
+                        fine layer of molasses to produce a brownish colour. .
+                        The type produced is very high polarity.
+                      </span>
+                    </li>
+                    <li class="flex space-x-2 items-center">
+                      <svg
+                        class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                        />
+                      </svg>
+                      <span class="leading-tight"
+                        >Bagged white crystal sugar - this sugar comes from a
+                        different processing step, resulting in crystals ready
+                        for direct consumption. It is used in the production of
+                        beverages, cakes and confectionery all over the world.
+                      </span>
+                    </li>
+                    <li class="flex space-x-2 items-center">
+                      <svg
+                        class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                        />
+                      </svg>
+                      <span class="leading-tight"
+                        >It is sold in 50-kg bags in Brazil and abroad, and
+                        especially in 1200-kg big-bags for industrial customers.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+            id="services"
+            role="tabpanel"
+            aria-labelledby="services-tab"
+          >
+            <div class="features">
+              <div class="feature">
+                <p
+                  class="text-xl font-semibold tracking-tight text-gray-900 feat-head"
+                >
+                  Beet sugar production?
+                </p>
+                <p
+                  class="mb-3 font-normal text-gray-700 dark:text-gray-400 feat-text"
+                >
+                  This is a multi-stage process that requires special apparatus.
+                  The process begins with harvesting the sugar beet, which is
+                  washed and cleaned of light and heavy impurities. The beet is
+                  cut into smaller pieces and a so-called cuttings is formed,
+                  which are introduced into a diffuser. There, the sugar is
+                  leached by using water at an elevated temperature (75-85 °C).
+                </p>
+              </div>
+              <div class="feature">
+                <p
+                  class="text-xl font-semibold tracking-tight text-gray-900 feat-head"
+                >
+                  Result
+                </p>
+                <p
+                  class="mb-3 font-normal text-gray-700 dark:text-gray-400 feat-text"
+                >
+                  The result is a slice and raw juice containing 15% sugar. The
+                  juice undergoes further processes, including purification from
+                  non-sugar compounds. Further stages involve crystallisation
+                  and centrifugation, which ultimately produces crystallised
+                  table sugar.
+                </p>
+              </div>
+              <div class="feature">
+                <p
+                  class="text-xl font-semibold tracking-tight text-gray-900 feat-head"
+                >
+                  Properties
+                </p>
+                <p
+                  class="mb-3 font-normal text-gray-700 dark:text-gray-400 feat-text"
+                >
+                  Beet sugar, although produced from beets, is white in colour.
+                  <br />
+                  It is a free-flowing, crystalline substance, available in
+                  grocery shops. Its unique characteristic is its sweet taste.
+                  <br />In addition, beet sugar dissolves well in water, has no
+                  odour, and when added to foods and beverages does not affect
+                  their flavour or colour. This makes it great not only as a
+                  sweetener for coffee and tea, but also for sweetening dishes,
+                  snacks and desserts in general.
+                </p>
+              </div>
+              <div class="feature">
+                <p
+                  class="text-xl font-semibold tracking-tight text-gray-900 feat-head"
+                >
+                  Types
+                </p>
+                <div class="feat-text">
+                  <ul
+                    role="list"
+                    class="mt-4 space-y-4 text-gray-500 dark:text-gray-400"
+                  >
+                    <li class="flex space-x-2 items-center">
+                      <svg
+                        class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                        />
+                      </svg>
+                      <span class="leading-tight"
+                        >Sugar - this term is used to describe a chemical
+                        compound composed of two monosaccharide molecules -
+                        glucose and fructose. Other names include disaccharide
+                        and sucrose.
+                      </span>
+                    </li>
+                    <li class="flex space-x-2 items-center">
+                      <svg
+                        class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                        />
+                      </svg>
+                      <span class="leading-tight"
+                        >White sugar - this is a crystalline sugar with a high
+                        degree of purity. The best quality is 'white sugar 1' or
+                        'white sugar 2'. Higher numbers indicate a poorer
+                        quality product. White sugar is also sometimes referred
+                        to as refined sugar.
+                      </span>
+                    </li>
+                    <li class="flex space-x-2 items-center">
+                      <svg
+                        class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                        />
+                      </svg>
+                      <span class="leading-tight"
+                        >Inverted sugar - a combination of glucose and fructose
+                        in two equal parts.
+                      </span>
+                    </li>
+                    <li class="flex space-x-2 items-center">
+                      <svg
+                        class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                        />
+                      </svg>
+                      <span class="leading-tight"
+                        >Candied sugar (kandyz) - sugar obtained through special
+                        crystallisation. It is characterised by large sugar
+                        crystals.
+                      </span>
+                    </li>
+                    <li class="flex space-x-2 items-center">
+                      <svg
+                        class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                        />
+                      </svg>
+                      <span class="leading-tight"
+                        >Raw sugar - this is sugar that has undergone a
+                        crystallisation process and is characterised by a lower
+                        degree of purity. Such sugar is then converted to white
+                        sugar.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- icumsa -->
       <div
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row gap"
       >

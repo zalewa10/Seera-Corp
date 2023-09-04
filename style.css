@@ -232,6 +232,35 @@ nav {
   align-items: center;
   gap: 1em;
 }
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid rgba(136, 134, 134, 0.211);
+  padding: 20px 0;
+}
+
+.feat-head {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.flex9 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex8 {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 768px) {
   .znik {
     display: inline;
@@ -337,5 +366,24 @@ nav {
   }
   .gap2 {
     margin-top: 0;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+  }
+  .feat-head {
+    width: 40%;
+  }
+  .feat-text {
+    width: 60%;
   }
 }
